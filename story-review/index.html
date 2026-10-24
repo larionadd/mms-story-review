@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#17120e">
+  <title>Перегляд сюжетів · Medieval Merchant Simulator</title>
+  <link rel="stylesheet" href="review.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="masthead">
+      <div><span class="eyebrow">Medieval Merchant Simulator</span><h1>Перегляд сюжетів</h1></div>
+      <button id="languageButton" class="quiet-button" type="button" aria-label="Змінити мову">EN</button>
+    </header>
+    <main>
+      <section id="library" class="library" aria-label="Список історій"></section>
+      <section id="reader" class="reader" hidden>
+        <div class="reader-bar">
+          <button id="libraryButton" class="quiet-button" type="button">← Історії</button>
+          <div id="progress" class="progress"></div>
+          <button id="restartButton" class="quiet-button" type="button">З початку</button>
+        </div>
+        <div id="chapterList" class="chapter-list" aria-label="Розділи"></div>
+        <div id="scene" class="scene"></div>
+        <div class="reader-actions">
+          <button id="backButton" class="quiet-button" type="button">← Назад</button>
+          <button id="historyButton" class="quiet-button" type="button" aria-expanded="false">Перечитати</button>
+        </div>
+        <div id="history" class="history" hidden></div>
+      </section>
+    </main>
+    <footer>Приватний перегляд сценаріїв. Рішення тут не змінюють збереження гри.</footer>
+  </div>
+  <script src="../js/domain/narrative-engine.js"></script>
+  <script src="../js/data/ibn-rushd-quest.js"></script>
+  <script src="../js/data/vistula-ashes-quest.js"></script>
+  <script src="../js/data/annual-quest-1205.js"></script>
+  <script src="../js/data/four-roads-story-draft.js"></script>
+  <script src="../js/data/planned-story-drafts.js"></script>
+  <script src="review.js"></script>
+</body>
+</html>
